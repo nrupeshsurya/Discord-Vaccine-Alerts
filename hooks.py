@@ -26,7 +26,8 @@ def get_appointment_session(pincode):
                 temp_hosp.append(k['available_capacity_dose1'])
                 temp_hosp.append(k['date'])
                 temp_hosp.append(k['slots'])
-            if (temp_hosp[1]>0):
+                temp_hosp.append(k['min_age_limit'])
+            if (temp_hosp[1]>0 and temp_hosp[4] == 18):
                 hospital_data.append(temp_hosp)
     
         #print(hospital_data)
