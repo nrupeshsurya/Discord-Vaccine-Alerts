@@ -1,1 +1,1 @@
-worker : python hooks.py
+worker : python3 hooks.py
