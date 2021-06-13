@@ -49,6 +49,7 @@ def test():
 
 def web_hooks(delay):
     response = get_appointment_session(641402)
+    test()
     if(len(response)>0):
         message = "<@428583398966165504>\n"+response
         data = {"content" : message}
