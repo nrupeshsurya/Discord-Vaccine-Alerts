@@ -4,13 +4,13 @@ import time
 from requests.models import Response
 
 
-def get_appointment_session(district_id):
+def get_appointment_session(pincode):
     today= date.today()
     d1 = today.strftime("%d-%m-%Y")
     print(d1)
-    print(district_id)
+    print(pincode)
     headers1={'User-Agent':"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36 Edg/90.0.818.51"}
-    response = requests.get(url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id="+str(district_id)+"&date="+d1,headers=headers1)
+    response = requests.get(url = "https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode="+str(pincode)+"&date="+d1,headers=headers1)
     # response= requests.get(url='https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByPin?pincode='+pincode+'&date='+d1,headers=headers1)
     
     print(response)
@@ -42,7 +42,7 @@ def get_appointment_session(district_id):
 discord_webhook_url = "https://discord.com/api/webhooks/853550796204933121/CWv9pwXtmL8W_iocPyia2Di_PTg-yBoll951tE3AQtd25FkVrMm_bmisNf3UYZn6Xg1L"
 
 def web_hooks(delay):
-    response = get_appointment_session(539)
+    response = get_appointment_session(641402)
     if(len(response)>0):
         message = "<@428583398966165504>\n"+response
         data = {"content" : message}
