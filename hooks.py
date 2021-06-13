@@ -42,6 +42,11 @@ def get_appointment_session(pincode):
 
 discord_webhook_url = "https://discord.com/api/webhooks/853550796204933121/CWv9pwXtmL8W_iocPyia2Di_PTg-yBoll951tE3AQtd25FkVrMm_bmisNf3UYZn6Xg1L"
 
+def test():
+    message = "<@428583398966165504> test\n"
+    data = {"content" : message}
+    r = requests.post(discord_webhook_url,data=data)
+
 def web_hooks(delay):
     response = get_appointment_session(641402)
     if(len(response)>0):
