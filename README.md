@@ -21,6 +21,11 @@ PINCODE = <enter pincode here>
 DISCORD_WEBHOOK = <enter url here>
 ```
 
+## Further Notes
+
+The code can be easily modified to search by District, change age group to 45+, get slot2 availability etc. Will try to implement a more modular design with
+error checks in the future. 
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
