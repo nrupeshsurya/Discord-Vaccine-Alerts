@@ -6,7 +6,8 @@ Get discord vaccine alerts for a particular pincode of your choice.
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
-virtualenv -p python ./vaccine-alerts
+pip3 install virtualenv
+virtualenv -p python3 ./vaccine-alerts
 source vaccine-alerts/bin/activate
 pip install -r requirements.txt 
 ```
@@ -16,7 +17,7 @@ pip install -r requirements.txt
 In order to use it, make a .env file with the following contents in the same directory 
 
 ```python
-PINCODE = 641402
+PINCODE = <enter pincode here>
 DISCORD_WEBHOOK = <enter url here>
 ```
 
