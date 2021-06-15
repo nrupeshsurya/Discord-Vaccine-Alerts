@@ -21,6 +21,9 @@ In order to use it, make a .env file with the following contents in the same dir
 PINCODE = <enter pincode here>
 DISCORD_WEBHOOK = <enter url here>
 ```
+```python
+python hooks.py
+```
 
 ## Further Notes
 
