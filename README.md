@@ -3,7 +3,7 @@
 Get discord vaccine alerts for a particular pincode of your choice. 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements.
 
 ```bash
 pip3 install virtualenv
