@@ -1,1 +1,29 @@
-Using webhooks to send Vaccine notifications on discord
+# Discord Vaccine Alerts
+
+Get discord vaccine alerts for a particular pincode of your choice. 
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+virtualenv -p python ./vaccine-alerts
+source vaccine-alerts/bin/activate
+pip install -r requirements.txt 
+```
+
+## Usage
+
+In order to use it, make a .env file with the following contents in the same directory 
+
+```python
+PINCODE = 641402
+DISCORD_WEBHOOK = <enter url here>
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
