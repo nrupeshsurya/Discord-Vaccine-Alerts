@@ -15,7 +15,8 @@ pip install -r requirements.txt
 
 ## Usage
 
-In order to use it, make a .env file with the following contents in the same directory 
+In order to use it, make a .env file with the following contents in the same directory.
+To create a Discrod webhook, follow this [link](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
 
 ```python
 PINCODE = <enter pincode here>
