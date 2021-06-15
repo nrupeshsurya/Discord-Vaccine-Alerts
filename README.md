@@ -1,6 +1,7 @@
 # Discord Vaccine Alerts
 
-Get discord vaccine alerts for a particular pincode of your choice. 
+Get discord vaccine alerts for a particular pincode of your choice. Current setup sends a GET request to the API every 60 seconds and if it receives a successful response which contains relevant data, it sends a POST request to the Discord webhook which sends a message to the configured server. 
+
 ## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install the requirements.
