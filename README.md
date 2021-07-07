@@ -18,10 +18,19 @@ pip install -r requirements.txt
 In order to use it, make a .env file with the following contents in the same directory.
 To create a Dicord webhook, follow this [link](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks).
 
-```python
+Create a .env file with the following details to get started
+
+```bash
+touch .env
+```
+
+```bash
 PINCODE = <enter pincode here>
 DISCORD_WEBHOOK = <enter url here>
 ```
+
+Run the hooks.py file to get started
+
 ```bash
 python hooks.py
 ```
